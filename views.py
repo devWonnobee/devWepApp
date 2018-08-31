@@ -1,5 +1,7 @@
-from devWepApp import app 
+from devWepApp import app
+
+from Flask import render_template
 
 @app.route('/')
 def index():
-    return 'Hello Michael!'
+    return render_template('index.html', title='Homepage')
