@@ -1,6 +1,5 @@
 from devWepApp import app
-
-from Flask import render_template
+from flask import render_template
 
 @app.route('/')
 def index():
